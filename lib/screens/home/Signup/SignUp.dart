@@ -26,94 +26,85 @@ Future<void> sigup() async{
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+       constraints: BoxConstraints.expand(),
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/images/image_5.jpg"),
+                        fit: BoxFit.cover)
+                        ),
         alignment: Alignment.center,
-        margin: EdgeInsets.all(30),
+        margin: EdgeInsets.all(2),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text("SIGN UP", style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,)),
             Container(
-            padding: EdgeInsets.all(2),
+            margin: EdgeInsets.all(10),
             child: TextFormField(
                 decoration: InputDecoration(
-                  icon: SvgPicture.asset("assets/icons/user-icon.svg"),
-                  labelText: "Enter User name:",
-                  hintText: "Username",
+                  icon: SvgPicture.asset("assets/icons/profile-user.svg"),
+                  hintText: "Enter User name:",
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
                 ),
                 controller: _user,
               ),
               decoration: BoxDecoration(
                       color: kPrimaryColor,
                       borderRadius: BorderRadius.circular(20),
-                      boxShadow: [
-                            BoxShadow(
-                                offset: Offset(0, 15),
-                                blurRadius: 22,
-                                color: kButtonColour.withOpacity(0.96) 
-                             ),
-                             ]
                           ),
                          ),
-            SizedBox(height: 5,),
+            //SizedBox(height: 1,),
             Container(
-              padding: EdgeInsets.all(2),
+              margin: EdgeInsets.all(10),
               child: TextFormField(
                 decoration: InputDecoration(
-                  icon: SvgPicture.asset("assets/icons/user-icon.svg"),
-                  labelText: "Enter Email:",
-                  hintText: "Your Email"
+                  icon: SvgPicture.asset("assets/icons/gmail.svg"),
+                  hintText: "Enter Email",
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
                 ),
                 controller: _email,
               ),
               decoration: BoxDecoration(
                       color: kPrimaryColor,
                       borderRadius: BorderRadius.circular(20),
-                      boxShadow: [
-                            BoxShadow(
-                                offset: Offset(0, 15),
-                                blurRadius: 22,
-                                color: kButtonColour.withOpacity(0.96) 
-                             ),
-                             ]
                           ),
             ),
-            SizedBox(height: 5,),
+            //SizedBox(height: 1,),
             Container(
-              padding: EdgeInsets.all(2),
+              margin: EdgeInsets.all(10),
               child: TextFormField(
                 obscureText: true,
                 decoration: InputDecoration(
-                  icon: SvgPicture.asset("assets/icons/user-icon.svg"),
-                  labelText: "Enter Password:",
-                  hintText: "Password"
+                  icon: SvgPicture.asset("assets/icons/lock.svg"),
+                  hintText: "Enter Password:",
+                  suffixIcon: Icon(Icons.visibility, color: kButtonColour,),
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
                 ),
                 controller: _password,
               ),
               decoration: BoxDecoration(
                       color: kPrimaryColor,
                       borderRadius: BorderRadius.circular(20),
-                      boxShadow: [
-                            BoxShadow(
-                                offset: Offset(0, 15),
-                                blurRadius: 22,
-                                color: kButtonColour.withOpacity(0.96) 
-                             ),
-                             ]
                           ),
             ),
-            SizedBox(height: 5,),
+            SizedBox(height: 1,),
             Container(
               height: 70,
               width: 150,
-              padding: EdgeInsets.all(5),
+              padding: EdgeInsets.all(10),
               // ignore: deprecated_member_use
               child: FlatButton(
                 shape: RoundedRectangleBorder(
-                 borderRadius: BorderRadius.circular(20),
+                 borderRadius: BorderRadius.circular(30),
                  ),
                  color: kButtonColour,
-                child: Text("Sign Up", style: TextStyle(
+                child: Text("SIGN UP", style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 20
+                  fontSize: 20,
+                  color: Colors.white
                 ),),
                 onPressed: (){
                   sigup();

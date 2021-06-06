@@ -51,6 +51,31 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/icons/back_arrow.svg
+    - assets/icons/flower.svg
+    - assets/icons/menu.svg
+    - assets/icons/search.svg
+    - assets/icons/heart-icon.svg
+    - assets/icons/icon_2.svg
+    - assets/icons/icon_3.svg
+    - assets/icons/icon_4.svg
+    - assets/icons/menu.svg
+    - assets/icons/more.svg
+    - assets/icons/sun.svg
+    - assets/icons/
+    - assets/images/
+    - assets/images/bottom_img_1.png
+    - assets/images/bottom_img_2.png
+    - assets/images/image_1.png
+    - assets/images/image_1.jpg
+    - assets/images/image_2.jpg
+    - assets/images/image_2.png
+    - assets/images/image_3.png
+    - assets/images/image_3.jpg
+    - assets/images/image_4.jpg
+    - assets/images/img_main.png
+    - assets/images/img.png
+    - assets/images/logo.png
      #assets/images
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
