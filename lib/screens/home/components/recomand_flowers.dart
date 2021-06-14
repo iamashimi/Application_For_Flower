@@ -102,13 +102,13 @@ final Function press;
                   ],
              ),
             ),
-           Text(
-             '\Rs.$price',
-             style: Theme.of(context)
-             .textTheme
-             .button!
-             .copyWith(color: kTextColor),
-           )
+          //  Text(
+          //    '\Rs.$price',
+          //    style: Theme.of(context)
+          //    .textTheme
+          //    .button!
+          //    .copyWith(color: kTextColor),
+          //  )
            ],
            ),
           ),

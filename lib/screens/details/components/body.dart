@@ -24,7 +24,7 @@ class Body extends StatelessWidget{
                     topRight: Radius.circular(20),),),
                 color: kButtonColour,
                 onPressed: (){}, 
-                child: Text("But Now",
+                child: Text("More details",
                 style: TextStyle(color: Colors.white,
                 fontSize: 16,
                 ),

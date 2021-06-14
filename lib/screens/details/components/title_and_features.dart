@@ -38,11 +38,11 @@ final int price;
             ),
           ),
           Spacer(),
-          Text("Rs.$price", 
-          style: Theme.of(context)
-                .textTheme
-                .headline5!
-                .copyWith(color: kButtonColour),)
+          // Text("Rs.$price", 
+          // style: Theme.of(context)
+          //       .textTheme
+          //       .headline5!
+          //       .copyWith(color: kButtonColour),)
         ],
         ),
     );
